@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizSpark | Knowledge Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="quiz-card">
+    <header class="header">
+      <div class="logo">Q<span>S</span></div>
+      <p class="tagline">LEARN SOMETHING NEW</p>
+      <h1>QuizSpark</h1>
+      <p class="subtitle">Challenge your mind. Find your spark.</p>
+    </header>
+
+    <section id="quiz-screen">
+      <div class="quiz-info">
+        <span id="question-count">Question 1 of 10</span>
+        <span id="score">Score: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+
+      <h2 id="question">Question appears here</h2>
+      <div id="answer-buttons" class="answer-buttons"></div>
+      <p id="feedback" aria-live="polite"></p>
+
+      <button id="next-button" class="primary-button" hidden>
+        Next Question →
+      </button>
+    </section>
+
+    <section id="result-screen" hidden>
+      <div class="result-icon">✦</div>
+      <h2>Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <p id="result-message"></p>
+      <button id="restart-button" class="primary-button">
+        Try Again ↻
+      </button>
+    </section>
+
+    <footer>Made with curiosity ✦ QuizSpark</footer>
+  </main>
+</body>
+</html>
+
+
